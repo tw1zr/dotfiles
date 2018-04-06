@@ -16,6 +16,5 @@ cp gtkrc-2.0 ~/.gtkrc-2.0
 cp bashrc ~/.bashrc
 cp yank.tmux ~/.yank.tmux
 
-sleep 2
 echo "done"
 exit

@@ -1,1 +1,1 @@
-apt install vim emacs gimp kdenlive filezilla transmission shutter audacious blueman gigolo evince gparted htop inkscape vlc
+apt install vim emacs gimp kdenlive filezilla transmission shutter audacious blueman gigolo evince gparted htop inkscape vlc lightdm lightdm-gtk-greeter-settings pluma eog 

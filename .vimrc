@@ -29,6 +29,7 @@ filetype plugin indent on
 filetype indent on
 set wildmenu
 set showmatch
+set scrolloff=5
 set ruler
 set number
 set mouse=a
@@ -39,6 +40,7 @@ set smarttab
 "let g:airline_powerline_fonts = 1
 set t_Co=256
 "set noshowmode
+set showcmd
 set cursorline
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -58,6 +60,8 @@ map <space> <leader>
 "let mapleader="\<Space>"
 nnoremap <leader>s :w<cr>
 nnoremap <leader>qq :q!<cr>
+map <leader>y "+y<cr>
+map <leader>p "+p<cr>
 ""EasyMotions
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)

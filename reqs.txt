@@ -1,0 +1,8 @@
+# APT
+apt install powerline tmux vim zsh git curl
+
+# Vim Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+# Oh-my-zsh
+h -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

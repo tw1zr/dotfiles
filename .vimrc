@@ -16,7 +16,7 @@ Plugin 'dracula/vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'itchyny/lightline.vim'
+Plugin 'itchyny/lairline_themeightline.vim'
 Plugin 'scrooloose/nerdcommenter'
 
 
@@ -26,6 +26,9 @@ call vundle#end()
 """"""""""""""""""""""""""""""
 
 filetype plugin indent on
+filetype indent on
+set wildmenu
+set showmatch
 set ruler
 set number
 set mouse=a
@@ -34,9 +37,9 @@ set tabstop=4
 set shiftwidth=4
 set smarttab
 "let g:airline_powerline_fonts = 1
-"set t_Co=256
-"let g:airline_theme='dracula'
+set t_Co=256
 "set noshowmode
+set cursorline
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
@@ -53,7 +56,6 @@ imap jk <Esc>
 map <space><space> <leader><leader>
 map <space> <leader>
 "let mapleader="\<Space>"
-imap <leader>i <Esc>
 nnoremap <leader>s :w<cr>
 nnoremap <leader>qq :q!<cr>
 ""EasyMotions

@@ -1,5 +1,5 @@
 # APT
-apt install powerline tmux vim zsh git curl
+apt install powerline tmux vim zsh git curl fonts-font-awesome i3 i3blocks
 
 # Oh-my-zsh
 h -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -7,7 +7,7 @@ h -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/in
 # Vim Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Fonts - Ubuntu Mono Powerline
+# Fonts - Ubuntu Mono
 
 # Oh-my-zsh (zsh) themes
 cp dpoggi.zsh-theme ~/.oh-my-zsh/themes/

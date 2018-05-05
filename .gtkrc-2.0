@@ -1,22 +1,15 @@
-style "panel-background" {
-bg_pixmap[NORMAL] = "foo.bar"
-bg_pixmap[PRELIGHT] = "foo.bar"
-bg_pixmap[ACTIVE] = "foo.bar"
-bg_pixmap[SELECTED] = "foo.bar"
-bg_pixmap[INSENSITIVE] = "foo.bar"
-}
-style "panel-color" {
-fg[NORMAL] = "#ffffff"
-fg[ACTIVE] = "#ffffff"
-# bg[NORMAL] = "#ffffff"
-# bg[PRELIGHT] = "#ffffff"
-# bg[ACTIVE] = "#ffffff"
-}
-widget_class "*Panel*" style "panel-background"
-widget "*PanelWidget*" style "panel-color"
-widget "*PanelApplet*" style "panel-color"
-widget "*Panel*" style "panel-color"
-widget_class "*Panel*" style "panel-color"
-class "*Panel*" style "panel-color"
-class "*Tray*" style "panel-color"
-class "*tray*" style "panel-color"
+gtk-theme-name="Arc"
+gtk-icon-theme-name="la-capitaine-icon-theme"
+gtk-font-name="System San Francisco 10"
+gtk-cursor-theme-name="Breeze_Snow"
+gtk-cursor-theme-size=0
+gtk-toolbar-style=GTK_TOOLBAR_BOTH
+gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR
+gtk-button-images=0
+gtk-menu-images=1
+gtk-enable-event-sounds=1
+gtk-enable-input-feedback-sounds=1
+gtk-xft-antialias=1
+gtk-xft-hinting=1
+gtk-xft-hintstyle="hintfull"
+gtk-xft-rgba="rgb"

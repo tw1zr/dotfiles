@@ -1,3 +1,12 @@
 [dotfiles]
 
 repository = ~/dotfiles
+ignore = [
+	'.git',
+	'adds.txt',
+	'reqs.txt',
+	'utils',
+	'README.md',
+	'.gitignore',
+	'*.swp']
+prefix = .

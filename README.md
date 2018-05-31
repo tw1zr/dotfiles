@@ -1,9 +1,24 @@
-To deploy these dotfiles is to use python's "dotfiles".
+I mostly made this dotfiles configuration for myself, you're free to use it as you see fit.
 
-You can manage them manually if you want but I have found that to be a headache.
+Installation script included (deploy.sh) do note that it'll replace most if not all of your current dotfiles.
 
-Installation Guide:
+Dependencies & Programs I use:
 
-Make sure to have python-pip installed:
-
-pip install dotfiles && git clone https://github/tw1zr/dotfiles ~/dotfiles && cp ~/dotfiles/.dotfilesrc ~/.dotfilesrc
+- zsh
+- oh-my-zsh
+- vim
+- neovim
+- i3-gaps
+- i3blocks
+- urxvt
+- ranger
+- qutebrowser
+- neofetch
+- feh
+- comptom
+- w3m
+- rofi
+- htop
+- mpd
+- ncmpcpp
+- mpv

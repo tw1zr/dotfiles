@@ -1,0 +1,65 @@
+! urxvt
+
+
+URxvt*font:                 xft:Ubuntu Mono:size=13.5:minspace=False
+!URxvt*font:                 xft:Ubuntu Mono:size=13.5:minspace=False
+URxvt*boldFont:             xft:Ubuntu Mono:size=15:minspace=False
+!URxvt*letterSpace: -10
+
+
+
+
+URxvt*depth: 					32
+URxvt*background: 				[95]#2f2f2f
+URxvt*foreground: 	           	[100]#e4e4e4
+URxvt*borderless: 				1
+URxvt*iso14755:         		False
+URxvt*scrollBar:            	False
+URxvt*saveLines:  				5000
+URxvt*termName:    				rxvt-unicode
+URxvt*urlLauncher: 				firefox
+URxvt*cursorBlink:				True
+
+urxvt.perl-ext-common:			default,matcher,resize-font,url-select
+
+URxvt.resize-font.smaller:		C-j
+URxvt.resize-font.bigger:		C-k
+Urxvt.keysym.M-Escape:			perl:keyboard-select:activate
+URxvt.keysym.M-s:				perl:keyboard-select:search
+URxvt.keysym.M-u:				perl:url-select:select_next
+
+! Black + Grey
+URxvt.color0:		#1d1f21
+URxvt.color8:		#969896
+
+! Red + Bright Red
+URxvt.color1:		#912226
+URxvt.color9:		#cc6666
+
+! Green + Bright Green
+URxvt.color2:	#45C217
+!#778900
+URxvt.color10:	#b5bd68
+
+! Yellow (Orange) + Bright Yellow (Yellow)
+URxvt.color3:		#ae7b00
+URxvt.color11:	#f0c674
+
+! Blue + Bright Blue
+URxvt.color4:	#3D3DEA
+
+!#175AC2	
+URxvt.color12:	#81a2be
+
+! Magenta (Purple) + Bright Magenta
+URxvt.color5:		#682a9b
+URxvt.color13:	#b294bb
+
+! Cyan (Aqua) + Bright Cyan
+URxvt.color6: #2b6651
+URxvt.color14: #7eefe0
+!#8abeb7
+
+! Light Grey (Selection) + White (Current Line)
+URxvt.color7: #929593
+URxvt.color15: #ecebec

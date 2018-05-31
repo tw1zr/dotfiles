@@ -1,11 +1,9 @@
-# APT
-apt install powerline tmux vim zsh git curl fonts-font-awesome i3 i3blocks
+# Arch Linux
+sudo pacman -S neovim zsh git curl i3-gaps i3blocks pamixer pactl ranger qutebrowser rofi neofetch feh dunst compton
+packer light betterlockscreen
 
 # Oh-my-zsh
 h -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-# Vim Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Fonts - Ubuntu Mono
 

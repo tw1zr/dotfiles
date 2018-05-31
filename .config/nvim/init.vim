@@ -1,21 +1,4 @@
-"" Vundle
 set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-
-"""""""""""""""""""""""""""""
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'ap/vim-css-color'
-
-
-
-
-"call vundle#end()
-""""""""""""""""""""""""""""""
 "" Shell Configuration
 colorscheme Tomorrow-Night
 filetype plugin indent on
@@ -32,13 +15,11 @@ set shiftwidth=4
 set smarttab
 set showcmd
 set cursorline
-
 "" Look & Style
 set guioptions-=m  "gui menu bar
 set guioptions-=T  "gui toolbar
 set guioptions-=r  "gui scrollbar
 set t_Co=256
-
 "" Keybinds
 imap jk <Esc>
 map <space><space> <leader><leader>
@@ -53,8 +34,3 @@ nnoremap tk :tabnext<cr>
 nnoremap tj :tabprev<cr>
 nnoremap tl :tablast<cr>
 nnoremap th :tabfirst<cr>
-" EasyMotions
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)

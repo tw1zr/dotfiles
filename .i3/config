@@ -1,18 +1,19 @@
 ## Gaps
 gaps inner 8
 gaps outer 13
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 ## Fonts
-font pango: System San Francisco, FontAwesome 10
+font pango: Inconsolata, FontAwesome 10
 ## Keybinds
 set $mod Mod4
 set $mod2 Mod1
-bindsym $mod+Shift+x exec ~/.i3/lock.sh
-bindsym $mod+Return exec --no-startup-id termite
-bindsym $mod+Shift+Return exec --no-startup-id thunar
+bindsym $mod+Shift+x exec betterlockscreen -l dim
+bindsym $mod+Return exec --no-startup-id urxvt
+bindsym $mod+Shift+Return exec --no-startup-id urxvt -e ranger
 bindsym $mod+q kill
 bindsym $mod+f fullscreen
-bindsym $mod+d exec --no-startup-id rofi -show run 
+bindsym $mod+d exec --no-startup-id rofi -show run -display-run ""
+#bindsym $mod+d exec dmenu_run
 bindsym $mod+Shift+d exec --no-startup-id rofi -show ssh
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+c reload
@@ -80,10 +81,9 @@ set $ws8 " 8   "
 set $ws9 " 9   "
 set $ws10 " 10  "
 # Assignation
-#assign [class="Termite"] $ws1
+assign [class="qutebrowser"] $ws3
 assign [class="Firefox"] $ws3
-#assign [class="Thunar"] $ws3
-#assign [class=""] $ws
+assign [class="Thunar"] $ws4
 #assign [class=""] $ws
 #assign [class=""] $ws
 #assign [class=""] $ws
@@ -160,9 +160,10 @@ bar {
 
 
 ## Startup
-#exec_always --no-startup-id nm-applet
-exec_always --no-startup-id "killall compton; compton --config ~/.compton.conf &"
-exec_always --no-startup-id ~/.autoff.sh
 exec_always --no-startup-id ~/.fehbg
-exec termite
-#exec firefox
+exec --no-startup-id "killall compton; compton -f --config ~/.config/compton.conf &"
+exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=2 
+exec --no-startup-id ~/.config/autoff.sh
+exec --no-startup-id setxkbmap -option caps:escape
+exec --no-startup-id numlockx
+exec urxvt

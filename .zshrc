@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+  export ZSH=/home/george/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -89,9 +89,48 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# alias cd="cd& ls"
-alias lla="ls -lA"
-alias la="ls -A"
+
+
+## Aliases
+
+# Configuration Files
+alias vimrc="vim ~/.vimrc"
+alias zshrc="vim ~/.zshrc"
+alias i3rc="vim ~/.i3.config"
+alias rofirc="vim ~/.config/rofi/config"
+alias quterc="vim ~/.config/qutebrowser/config.py"
+alias rangerrc="vim ~/.config/ranger/rc.conf"
+#alias ="vim ~/.config/
+#alias ="vim ~/.config/
+#alias ="vim ~/.config/
+#alias ="vim ~/.config/
+#alias ="vim ~/.config/
+
+# Places
+alias d="cd ~/Documents && ls"
+alias mnt="cd /mnt && ls"
+alias wp="cd ~/Pictures/wallpapers && ls"
+alias h="cd ~ && ls"
+alias D="cd ~/Downloads && ls"
+alias dots="cd ~/dotfiles && ls -a"
+
+# ls
+alias la="ls -a"
+alias ll="ls -l"
+alias lla="ls -la"
+
+# Programs
+alias ris="ristretto $*"
+alias r="ranger"
+alias sr="sudo ranger"
+alias sr="sudo ranger"
+alias v="nvim $*"
+alias sv="sudo nvim $*"
+alias nf="clear && neofetch"
+
+# System
+alias po="systemctl poweroff"
+alias progs="pacman -Qet"
+alias orphans="pacman -Qdt"
+alias bw="wal -i ~/.wall.png"
+

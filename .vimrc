@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'ap/vim-css-color'
+Plugin 'chrisbra/Colorizer'
 
 
 

@@ -1,7 +1,7 @@
 ## Gaps
 gaps inner 8
 gaps outer 13
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 ## Fonts
 font pango: Inconsolata, FontAwesome 10
 ## Keybinds

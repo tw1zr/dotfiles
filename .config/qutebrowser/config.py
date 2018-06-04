@@ -1004,7 +1004,7 @@ c.qt.force_software_rendering = True
 
 ## Show a scrollbar.
 ## Type: Bool
-c.scrolling.bar = False
+c.scrolling.bar = True
 
 ## Enable smooth scrolling for web pages. Note smooth scrolling does not
 ## work with the `:scroll-px` command.
@@ -1067,7 +1067,7 @@ c.spellcheck.languages = []
 
 ## Hide the statusbar unless a message is shown.
 ## Type: Bool
-c.statusbar.hide = True
+c.statusbar.hide = False
 
 ## Padding for the statusbar.
 ## Type: Padding
@@ -1249,35 +1249,12 @@ c.url.incdec_segments = ['path', 'query']
 c.url.searchengines = {
         'DEFAULT': 'https://duckduckgo.com/?q={}',
         'i': 'https://duckduckgo.com/?q={}&iar=images&iax=images&ia=images',
-        'vic': 'https://la.wikipedia.org/w/index.php?search={}&title=Specialis%3AQuaerere',
         'red': 'https://reddit.com/r/{}',
-        'wt': 'http://en.wiktionary.org/?search={}',
-        'osm': 'http://www.openstreetmap.org/search?query={}',
-        'art': 'http://arizona.summon.serialssolutions.com/search?q={}',
-        'book': 'http://sabio.library.arizona.edu/search/X?SEARCH={}',
-        'lib': 'http://gen.lib.rus.ec/search.php?req={}',
         'tpb': 'http://thepiratebay.org/search/{}',
-        'laincat': 'http://lainchan.org/{}/catalog.html',
-        'tw': 'https://twitter.com/{}',
-        '8': 'https://8ch.net/{}',
-        'eb': 'https://ebay.com/sch/{}',
-        'etym': 'http://etymonline.com/index.php?allowed_in_frame=0&search={}',
+        'eb': 'https://ebay.co.uk/sch/{}',
         'ddg': 'https://duckduckgo.com/?q={}&t=ha&iar=images',
         'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}',
-        '4cat': 'https://boards.4chan.org/{}/catalog',
-        'lain': 'http://lainchan.org/{}',
-        'gw': 'https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}',
-        '8cat': 'https://8ch.net/{}/catalog.html',
         'yt': 'https://www.youtube.com/results?search_query={}',
-        'ig': 'https://wiki.installgentoo.com/index.php?search={}&title=Special%3ASearch',
-        'w': 'https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go',
-        '4': 'https://boards.4chan.org/{}',
-        'sk': 'https://www.skytorrents.in/search/all/ed/1/?l=en-us&q={}',
-        'vw': 'https://wiki.voidlinux.eu/index.php?search={}&title=Special%3ASearch',
-        'thw': 'http://www.thinkwiki.org/w/index.php?search={}&title=Special%3ASearch',
-        'vw': 'http://vim.wikia.com/wiki/Special:Search?fulltext=Search&query={}',
-        'bc': 'https://www.bitchute.com/search?q={}&sort=date_created%20desc',
-        'mdbg': 'https://mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb={}',
         }
 
 

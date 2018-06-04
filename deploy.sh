@@ -20,11 +20,14 @@ if [ "$(whoami)" != "root" ]; then
 	ln -fs $CWD/.config/dunst $HOME/.config/
 	ln -fs $CWD/.config/feh $HOME/.config/
 	ln -fs $CWD/.config/neofetch $HOME/.config/
+	ln -fs $CWD/.config/mpv $HOME/.config/
+	ln -fs $CWD/.config/mpd $HOME/.config/
+	#ln -fs $CWD/.config/mpc $HOME/.config/
+	ln -fs $CWD/.ncmpcpp $HOME/
+	ln -fs $CWD/.config/youtube-dl $HOME/.config/
 	ln -fs $CWD/.config/compton.conf $HOME/.config/compton.conf
 	ln -fs $CWD/.config/autoff.sh $HOME/.config/autoff.sh
 	ln -fs $CWD/prompt/dpoggi.zsh-theme $HOME/.oh-my-zsh/themes/dpoggi.zsh-theme
-	#ln -fs $CWD/.ncmpcpp $HOME/.ncmpcpp
-	#ln -fs $CWD/.config/mpv $HOME/.config/mpv
 	sleep 2
 	echo "done!"
 fi

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cur=$(ncmpcpp --current-song="{{%30a - }%30t}|{%40f}")
+song=$(echo -e $cur | sed -e "s/\[\(playing\|paused\)\].*//")
+status=$(echo `mpc` | egrep -o "\[(playing|paused)\]")
+
+if [[ $status == "[paused]" ]]; then res=" Paused"; else res="$song"; fi
+
+nonaa=$(ps -C ncmpcpp | grep -o ncmpcpp)
+
+if [[ $nonaa = "" ]]; then
+	exit
+else
+	echo $res
+	echo $res
+	echo "#FFFFFF"
+fi

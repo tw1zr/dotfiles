@@ -1,1 +1,0 @@
-/home/george/dotfiles/.i3

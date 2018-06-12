@@ -8,8 +8,10 @@ font pango: Inconsolata, FontAwesome 10
 set $mod Mod4
 set $mod2 Mod1
 bindsym $mod+Shift+x exec betterlockscreen -l dim
+# bindsym $mod+k exec no-startup-id urxvt
 bindsym $mod+Return exec --no-startup-id urxvt
 bindsym $mod+Shift+Return exec --no-startup-id urxvt -e ranger
+bindsym $mod+Shift+f exec firefox
 bindsym $mod+q kill
 bindsym $mod+f fullscreen
 bindsym $mod+d exec --no-startup-id rofi -show run -display-run ""
@@ -161,6 +163,7 @@ bar {
 
 ## Startup
 exec_always --no-startup-id ~/.fehbg
+#exec_always ~/i3d/her/launch.sh
 exec --no-startup-id "killall compton; compton -f --config ~/.config/compton.conf &"
 exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=2 
 exec --no-startup-id ~/.config/autoff.sh
